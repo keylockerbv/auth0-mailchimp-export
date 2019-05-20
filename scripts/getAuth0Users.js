@@ -19,7 +19,7 @@ var getUsers = function (config, allUsers, perPage, pageNumber) {
     search_engine: 'v2',
     per_page: perPage,
     page: pageNumber,
-    fields: 'email,given_name,family_name,username,name',
+    fields: 'email,username,name',
     include_fields: 'true'
   };
 
