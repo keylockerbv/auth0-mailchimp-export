@@ -16,7 +16,7 @@ var getUsers = function (config, allUsers, perPage, pageNumber) {
   var deferred = Q.defer();
   var searchCriteria = {
     q: q,
-    search_engine: 'v2',
+    search_engine: 'v3',
     per_page: perPage,
     page: pageNumber,
     fields: 'email,username,name',
