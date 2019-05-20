@@ -34,10 +34,6 @@
       "description": "This is the name of the MailChimp List you wish to export Auth0 User Profiles to. eg. Auth0-DBConn1",
       "required": true
     },
-    "AUTH0_CONNECTION_NAME": {
-      "description": "This is the Auth0 Connection name associated with the user profiles you wish to export",
-      "required": true
-    },
     "UPDATE_DAYS": {
       "description": "The number of days back from job instantiation date to retrieve users (default: 1). Use * for all records (but note that this will timeout if executed on Auth0; see README.md for more information).",
       "required": true,

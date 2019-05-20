@@ -14,8 +14,7 @@ function job (req, res) {
     'AUTH0_CLIENT_ID',
     'AUTH0_CLIENT_SECRET',
     'MAILCHIMP_API_KEY',
-    'MAILCHIMP_LIST_NAME',
-    'AUTH0_CONNECTION_NAME'
+    'MAILCHIMP_LIST_NAME'
   ];
 
   var missing_settings = required_settings.filter(function (setting) {
@@ -31,7 +30,6 @@ function job (req, res) {
     USER_SEARCH_MGMT_TOKEN: req.access_token,
     MAILCHIMP_API_KEY: ctx.data.MAILCHIMP_API_KEY,
     MAILCHIMP_LIST_NAME: ctx.data.MAILCHIMP_LIST_NAME,
-    AUTH0_CONNECTION_NAME: ctx.data.AUTH0_CONNECTION_NAME,
     UPDATE_DAYS: ctx.data.UPDATE_DAYS
   };
 
