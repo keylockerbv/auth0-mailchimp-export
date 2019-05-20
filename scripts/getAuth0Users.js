@@ -9,9 +9,19 @@ var getUsers = function (config, allUsers, perPage, pageNumber) {
 
   var TENANT_DOMAIN = config.TENANT_DOMAIN;
   var USER_SEARCH_MGMT_TOKEN = config.USER_SEARCH_MGMT_TOKEN;
+  var UPDATE_DATE = config.UPDATE_DAYS !== '*' ? moment().subtract(config.UPDATE_DAYS, 'days').format('YYYY-MM-DD') : '*';
+
+  var q = 'email_verified:true AND _exists_:email AND _exists_:email AND updated_at:[' + UPDATE_DATE + ' TO *]';
 
   var deferred = Q.defer();
-  var searchCriteria = { search_engine: 'v3', per_page: perPage, page: pageNumber, fields: 'email,given_name,family_name,username,name', include_fields: 'true' };
+  var searchCriteria = {
+    q: q,
+    search_engine: 'v2',
+    per_page: perPage,
+    page: pageNumber,
+    fields: 'email,given_name,family_name,username,name',
+    include_fields: 'true'
+  };
 
   var options = {
     method: 'GET',

@@ -32,6 +32,7 @@ function job (req, res) {
     MAILCHIMP_API_KEY: ctx.data.MAILCHIMP_API_KEY,
     MAILCHIMP_LIST_NAME: ctx.data.MAILCHIMP_LIST_NAME,
     AUTH0_CONNECTION_NAME: ctx.data.AUTH0_CONNECTION_NAME,
+    UPDATE_DAYS: ctx.data.UPDATE_DAYS
   };
 
   requestMailChimpSync(config, function (err) {
