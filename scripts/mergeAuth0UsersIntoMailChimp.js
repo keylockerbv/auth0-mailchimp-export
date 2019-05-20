@@ -17,7 +17,10 @@ var mergeAuth0UsersIntoMailChimp = function (config, mailchimp) {
           email_type: 'text',
           merge_vars: {
             'FNAME': user.given_name || '',
-            'LNAME': user.family_name || ''
+            'LNAME': user.family_name || '',
+            'FULLNAME': user.name || '',
+            'USERNAME': user.username || '',
+            'VERIFIED': 'true'
           }
         };
       }),
