@@ -1,5 +1,3 @@
-var express = require('express');
-var app = express();
 var memoizer = require('lru-memoizer');
 var Request = require('superagent');
 var syncWithMailChimp = require('./scripts/syncWithMailChimp');
