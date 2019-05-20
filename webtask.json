@@ -1,7 +1,7 @@
 {
-  "codeUrl": "https://github.com/auth0/auth0-mailchimp-export",
+  "codeUrl": "https://github.com/keylockerbv/auth0-mailchimp-export",
   "title": "Auth0 MailChimp Export",
-  "name": "auth0-mailchimp-export-sh",
+  "name": "auth0-mailchimp-export",
   "version": "1.0.0",
   "author": "keylockerbv",
   "description": "Allows Auth0 Customers to synchronize their Auth0 User base (those that have an email) with a MailChimp List",
