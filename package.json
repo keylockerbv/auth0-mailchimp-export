@@ -1,5 +1,5 @@
 {
-  "name": "auth0-mailchimp-export",
+  "name": "auth0-mailchimp-export-sh",
   "version": "1.0.1",
   "description": "Allows Auth0 Customers to synchronize their Auth0 User base (those that have an email) with a MailChimp List",
   "scripts": {
