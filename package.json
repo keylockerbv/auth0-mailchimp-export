@@ -12,25 +12,29 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/auth0/auth0-mailchimp-export.git"
+    "url": "https://github.com/keylockerbv/auth0-mailchimp-export.git"
   },
   "author": "richard.seldon@auth0.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/auth0/auth0-mailchimp-export/issues"
+    "url": "https://github.com/keylockerbv/auth0-mailchimp-export/issues"
   },
-  "homepage": "https://github.com/auth0/auth0-mailchimp-export#readme",
+  "homepage": "https://github.com/keylockerbv/auth0-mailchimp-export#readme",
   "dependencies": {
     "async": "^2.1.2",
     "auth0": "^2.1.0",
     "express": "4.12.4",
+    "fs": "0.0.1-security",
     "lodash": "^4.8.2",
     "lru-memoizer": "^1.5.0",
     "mailchimp": "^1.2.0",
+    "moment": "^2.18.1",
+    "net": "^1.0.2",
     "q": "^1.4.1",
     "ramda": "^0.18.0",
     "request": "^2.67.0",
     "superagent": "^2.0.0",
+    "tls": "0.0.1",
     "webtask-tools": "1.3.0"
   },
   "devDependencies": {
